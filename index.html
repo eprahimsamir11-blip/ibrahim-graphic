@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ibrahim Samir — Graphic Designer & Brand Identity Specialist. معرض أعمال مصمم الجرافيك إبراهيم سمير لتصميم الهويات البصرية والشعارات والإعلانات المبتكرة." />
+  <meta name="keywords" content="Ibrahim Samir, Graphic Designer, Logo Design, Branding, Social Media Design, Posters, Menu Design, Business Cards, إبراهيم سمير, مصمم جرافيك" />
+  <meta name="author" content="Ibrahim Samir" />
+  <title>Ibrahim Samir — World-Class Graphic Designer Portfolio</title>
+  
+  <!-- Favicon Monogram SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f59e0b'/><text x='50%' y='62%' font-family='Arial, sans-serif' font-weight='900' font-size='50' fill='%23000' text-anchor='middle'>IS</text></svg>" />
+
+  <!-- Google Fonts (Cairo & Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main Style Sheet -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       1. PRELOADER / LOADING SCREEN
+       ========================================== -->
+  <div id="loading-screen">
+    <div class="loader-logo">
+      <span class="en-text">IBRAHIM SAMIR</span>
+    </div>
+    <div class="loader-bar-bg">
+      <div class="loader-bar-fill"></div>
+    </div>
+    <div class="loader-text">0% INITIALIZING LUXURY CREATIVITY</div>
+  </div>
+
+  <!-- ==========================================
+       2. HEADER & NAVBAR
+       ========================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Brand Monogram Logo -->
+      <a href="#hero" class="brand-logo">
+        <div class="logo-icon">IS</div>
+        <div class="logo-text">
+          <span class="logo-name">إبراهيم سمير</span>
+          <span class="logo-sub en-text">GRAPHIC DESIGNER</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+          <li><a href="#about" class="nav-link">من أنا</a></li>
+          <li><a href="#services" class="nav-link">الخدمات</a></li>
+          <li><a href="#portfolio" class="nav-link">معرض الأعمال</a></li>
+          <li><a href="#estimator" class="nav-link">حاسبة المشروع</a></li>
+          <li><a href="#why-me" class="nav-link">لماذا أنا</a></li>
+          <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+          <li><a href="#contact" class="nav-link">تواصل معي</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="تبديل المظهر">
+          <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21m8.966-8.966h-2.25m-13.5 0H3m15.364 6.364l-1.591-1.591M6.758 6.758L5.167 5.167m12.728 0l-1.591 1.591M6.758 17.242l-1.591 1.591M12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z"/></svg>
+        </button>
+
+        <!-- CTA Direct WhatsApp Button -->
+        <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أنا%20مهتم%20بخدمات%20التصميم%20وأرغب%20في%20الاستفسار" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>احجز تصميمك</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="القائمة">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div id="mobile-overlay" class="mobile-menu-overlay"></div>
+  <aside id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="brand-logo">
+        <div class="logo-icon">IS</div>
+        <span class="logo-name">إبراهيم سمير</span>
+      </div>
+      <button id="mobile-close" class="mobile-close-btn">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link">الرئيسية</a></li>
+      <li><a href="#about" class="mobile-nav-link">من أنا</a></li>
+      <li><a href="#services" class="mobile-nav-link">الخدمات</a></li>
+      <li><a href="#portfolio" class="mobile-nav-link">معرض الأعمال</a></li>
+      <li><a href="#estimator" class="mobile-nav-link">حاسبة التكلفة</a></li>
+      <li><a href="#why-me" class="mobile-nav-link">لماذا أنا</a></li>
+      <li><a href="#testimonials" class="mobile-nav-link">آراء العملاء</a></li>
+      <li><a href="#faq" class="mobile-nav-link">الأسئلة الشائعة</a></li>
+      <li><a href="#contact" class="mobile-nav-link">تواصل معي</a></li>
+    </ul>
+    <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أنا%20مهتم%20بخدمات%20التصميم%20وأرغب%20في%20الاستفسار" target="_blank" class="btn-primary" style="width:100%; text-align:center;">
+      تواصل عبر واتساب
+    </a>
+  </aside>
+
+  <!-- ==========================================
+       3. HERO SECTION
+       ========================================== -->
+  <section id="hero" class="hero-section">
+    <!-- Ambient Background Lighting Vectors -->
+    <div class="hero-bg-shapes">
+      <div class="bg-glow-1"></div>
+      <div class="bg-glow-2"></div>
+      <div class="hero-grid-pattern"></div>
+    </div>
+
+    <div class="container hero-grid-wrapper">
+      <!-- Left Info Column -->
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>مصمم جرافيك & متخصص هويات بصرية</span>
+        </div>
+        <h1 class="hero-title">
+          أصنع للهويات البصرية <br />
+          <span class="highlight">روحًا تترك أثرًا</span> لا يُنسى.
+        </h1>
+        <p class="hero-subtitle">
+          مرحبًا بك، أنا <strong>Ibrahim Samir</strong>. أجمع بين الرؤية الاستراتيجية والجمال الهندسي لابتكار تصميمات عالمية المستوى تُبرز علاماتك التجارية وتزيد من جذب العملاء وتحويلهم.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#portfolio" class="btn-primary">
+            <span>شاهد أعمالي</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </a>
+          <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أنا%20مهتم%20بخدمات%20التصميم%20وأرغب%20في%20الاستفسار" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            <span>تواصل معي مباشرة</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">150<span>+</span></div>
+            <div class="stat-label">مشروع ناجح</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5<span>+</span></div>
+            <div class="stat-label">سنوات خبرة</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100<span>%</span></div>
+            <div class="stat-label">رضا العملاء</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Feature Showcase (Pure SVG Design Canvas) -->
+      <div class="hero-visual-card reveal">
+        <div class="canvas-header">
+          <div class="canvas-controls">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="canvas-tag">IS_BRAND_SYSTEM_v2.0</span>
+        </div>
+
+        <div class="interactive-mockup-wrapper">
+          <!-- Dynamic Design Geometry Vector Art -->
+          <svg class="mockup-svg-canvas" viewBox="0 0 500 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Grid Lines Background -->
+            <path d="M0 50H500M0 100H500M0 150H500M0 200H500M0 250H500M0 300H500M0 350H500" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+            <path d="M50 0V380M100 0V380M150 0V380M200 0V380M250 0V380M300 0V380M350 0V380M400 0V380M450 0V380" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+            
+            <!-- Geometric Golden Ratio Overlay Curves -->
+            <circle cx="250" cy="190" r="140" stroke="rgba(245,158,11,0.25)" stroke-width="1.5" stroke-dasharray="4 4"/>
+            <circle cx="250" cy="190" r="90" stroke="rgba(6,182,212,0.3)" stroke-width="1.5"/>
+            <circle cx="250" cy="190" r="45" stroke="rgba(245,158,11,0.5)" stroke-width="2"/>
+            
+            <!-- Monogram Geometric Logo Vector -->
+            <path d="M190 140 L250 100 L310 140 L310 240 L250 280 L190 240 Z" stroke="url(#hero-grad)" stroke-width="3" fill="rgba(245,158,11,0.05)"/>
+            <path d="M250 100 V280" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            <path d="M190 140 L310 240" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+            <path d="M310 140 L190 240" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+            <!-- Stylized Monogram Text inside Vector -->
+            <text x="250" y="202" font-family="Poppins, sans-serif" font-weight="900" font-size="34" fill="url(#hero-grad)" text-anchor="middle">IS</text>
+
+            <!-- Vector Control Points -->
+            <circle cx="250" cy="100" r="5" fill="#f59e0b"/>
+            <circle cx="310" cy="140" r="5" fill="#f59e0b"/>
+            <circle cx="310" cy="240" r="5" fill="#06b6d4"/>
+            <circle cx="250" cy="280" r="5" fill="#06b6d4"/>
+            <circle cx="190" cy="240" r="5" fill="#f59e0b"/>
+            <circle cx="190" cy="140" r="5" fill="#f59e0b"/>
+
+            <!-- Gradient Definition -->
+            <defs>
+              <linearGradient id="hero-grad" x1="190" y1="100" x2="310" y2="280" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#f59e0b"/>
+                <stop offset="0.5" stop-color="#fbbf24"/>
+                <stop offset="1" stop-color="#06b6d4"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Floating Badge -->
+        <div class="floating-exp-badge">
+          <div class="exp-badge-icon">✓</div>
+          <div>
+            <div style="font-weight: 800; font-size:0.9rem; color: var(--text-primary);">تصميمات احترافية VIP</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">دقة في النسب والتفاصيل</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. ABOUT SECTION
+       ========================================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">من أنا</span>
+        <h2 class="section-title">فلسفتي في التصميم والإبداع</h2>
+        <p class="section-description">
+          التصميم بالنسبة لي ليس مجرد ألوان وأشكال، بل هو أداة استراتيجية لبناء الانطباع الأول وصناعة علامة تجارية قوية.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Bio Card -->
+        <div class="glass-card about-bio-card reveal">
+          <p class="bio-highlight">
+            "أؤمن أن الشعار الناجح والهوية البصرية المتقنة هما الاستثمار الأهم لأي مشروع يسعى للقمة."
+          </p>
+          <p class="bio-paragraph">
+            أنا <strong>Ibrahim Samir</strong>، مصمم جرافيك متكفّل بابتكار الحلول البصرية الشاملة. عملت خلال السنوات الماضية على تطوير مئات المشاريع للشركات، المطاعم، المؤسسات الاستشارية، والمنصات الرقمية.
+          </p>
+          <p class="bio-paragraph">
+            أعتمد بالكامل على التحليل العميق لجمهورك المستهدف ومنافسيك قبل وضع أول خط في التصميم، لضمان مخرجات تجمع بين الأناقة المطلقة والفعالية التجارية.
+          </p>
+        </div>
+
+        <!-- Skills Progress Container -->
+        <div class="glass-card skills-container reveal">
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--accent-amber);">البرامج والمهارات الرئيسية</h3>
+          
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Adobe Illustrator (الهويات والشعارات)</span>
+              <span>98%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-percent="98"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Adobe Photoshop (المكونات والسوشيال ميديا)</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-percent="95"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>Adobe InDesign (الكتالوجات والمنيو والكتب)</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-percent="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>استراتيجيات العلامة التجارية وهندسة الألوان</span>
+              <span>96%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-percent="96"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline & Experience -->
+      <div class="experience-grid reveal">
+        <div class="exp-card">
+          <span class="exp-year">2019 — 2021</span>
+          <h4 class="exp-role">Graphic Designer</h4>
+          <p class="exp-desc">تصميم البوسترات، كروت الأعمال، والمطبوعات التجارية المتنوعة.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-year">2021 — 2023</span>
+          <h4 class="exp-role">Senior Brand Identity Designer</h4>
+          <p class="exp-desc">إشراف وتطوير الهويات البصرية الكاملة للشركات الناشئة والمؤسسات.</p>
+        </div>
+        <div class="exp-card">
+          <span class="exp-year">2023 — الآن</span>
+          <h4 class="exp-role">Creative Consultant & Designer</h4>
+          <p class="exp-desc">تقديم حلول بصرية متكاملة واستشارات التصميم للعملاء في الوطن العربي والعالم.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. SERVICES SECTION
+       ========================================== -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">خدماتي الاحترافية</span>
+        <h2 class="section-title">ما الذي أقدمه لعلامتك التجارية؟</h2>
+        <p class="section-description">
+          خدمات تصميم شاملة ومصممة بعناية فائقة تلبي كافة احتياجات التسويق والطباعة والهوية البصرية.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. Logo Design -->
+        <div class="glass-card service-card reveal">
+          <div>
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <h3 class="service-title">Logo Design</h3>
+            <p class="service-desc">ابتكار شعارات مبتكرة وأصيلة تعبر عن جوهر مشروعك بأسلوب عصري فريد وسهل التذكر.</p>
+            <div class="service-features">
+              <span class="feature-tag">شعارات هندسية</span>
+              <span class="feature-tag">خطوط مخصصة</span>
+              <span class="feature-tag">ملفات المتجهات</span>
+            </div>
+          </div>
+          <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أرغب%20في%20طلب%20خدمة%20Logo%20Design" target="_blank" class="service-btn">
+            <span>طلب الخدمة</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 2. Branding -->
+        <div class="glass-card service-card reveal">
+          <div>
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a15.996 15.996 0 000 0z"/></svg>
+            </div>
+            <h3 class="service-title">Branding</h3>
+            <p class="service-desc">تطوير هوية بصرية كاملة تشمل لوحة الألوان، التيبوجرافي، الدليل الإرشادي، والتطبيقات المطبوعة.</p>
+            <div class="service-features">
+              <span class="feature-tag">Brand Guidelines</span>
+              <span class="feature-tag">هوية كاملة</span>
+              <span class="feature-tag">تطبيقات VIP</span>
+            </div>
+          </div>
+          <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أرغب%20في%20طلب%20خدمة%20Branding" target="_blank" class="service-btn">
+            <span>طلب الخدمة</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 3. Social Media Design -->
+        <div class="glass-card service-card reveal">
+          <div>
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+            </div>
+            <h3 class="service-title">Social Media Design</h3>
+            <p class="service-desc">تصاميم منشورات وقوالب إعلانية جذابة لمنصات Instagram, Facebook, LinkedIn لزيادة تفاعل المتابعين.</p>
+            <div class="service-features">
+              <span class="feature-tag">Instagram Feed</span>
+              <span class="feature-tag">Stories & Ads</span>
+              <span class="feature-tag">قوالب قابلة للتعديل</span>
+            </div>
+          </div>
+          <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أرغب%20في%20طلب%20خدمة%20Social%20Media%20Design" target="_blank" class="service-btn">
+            <span>طلب الخدمة</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 4. Posters -->
+        <div class="glass-card service-card reveal">
+          <div>
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
+            </div>
+            <h3 class="service-title">Posters</h3>
+            <p class="service-desc">بوسترات إعلانية وفعاليات سينمائية وتجارية مبهرة تجذب الانتباه وتنقل الرسالة بقوة بصرياً.</p>
+            <div class="service-features">
+              <span class="feature-tag">إعلانات الطرق</span>
+              <span class="feature-tag">فعاليات ومهرجانات</span>
+              <span class="feature-tag">دقة عالية للطباعة</span>
+            </div>
+          </div>
+          <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أرغب%20في%20طلب%20خدمة%20Posters" target="_blank" class="service-btn">
+            <span>طلب الخدمة</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 5. Flyers -->
+        <div class="glass-card service-card reveal">
+          <div>
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+            </div>
+            <h3 class="service-title">Flyers</h3>
+            <p class="service-desc">فلايرات ومنشورات دعائية وترويجية احترافية ثنائية أو ثلاثية الطيات (Bi-fold / Tri-fold).</p>
+            <div class="service-features">
+              <span class="feature-tag">Flyer Bi-fold</span>
+              <span class="feature-tag">عروض وترويج</span>
+              <span class="feature-tag">تنظيم احترافي</span>
+            </div>
+          </div>
+          <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أرغب%20في%20طلب%20خدمة%20Flyers" target="_blank" class="service-btn">
+            <span>طلب الخدمة</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 6. Menu Design -->
+        <div class="glass-card service-card reveal">
+          <div>
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+            </div>
+            <h3 class="service-title">Menu Design</h3>
+            <p class="service-desc">تصميم المنيو للمطاعم والكافيهات الفاخرة بطريقة شهية ومنظمة تُسهّل عملية الطلب وتبرز الأطباق.</p>
+            <div class="service-features">
+              <span class="feature-tag">منيو مطبوع</span>
+              <span class="feature-tag">Digital QR Menu</span>
+              <span class="feature-tag">ترتيب شهي</span>
+            </div>
+          </div>
+          <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أرغب%20في%20طلب%20خدمة%20Menu%20Design" target="_blank" class="service-btn">
+            <span>طلب الخدمة</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 7. Business Cards -->
+        <div class="glass-card service-card reveal">
+          <div>
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"/></svg>
+            </div>
+            <h3 class="service-title">Business Cards</h3>
+            <p class="service-desc">كروت أعمال فاخرة (VIP Business Cards) بأفخم التفاصيل وتقنيات التذهيب والبروز المجهّزة للطباعة.</p>
+            <div class="service-features">
+              <span class="feature-tag">Spot UV & Gold Foil</span>
+              <span class="feature-tag">تصميم فاخر</span>
+              <span class="feature-tag">جاهز للطباعة</span>
+            </div>
+          </div>
+          <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أرغب%20في%20طلب%20خدمة%20Business%20Cards" target="_blank" class="service-btn">
+            <span>طلب الخدمة</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 8. Banner Design -->
+        <div class="glass-card service-card reveal">
+          <div>
+            <div class="service-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-1-1.5h-9.5m0 0l-.5 1.5"/></svg>
+            </div>
+            <h3 class="service-title">Banner Design</h3>
+            <p class="service-desc">تصميم بنرات إعلانية للمواقع الإلكترونية والمتاجر الرقمية والمعارض الواقعية بأبعاد قياسية ممتازة.</p>
+            <div class="service-features">
+              <span class="feature-tag">Web & Display Banners</span>
+              <span class="feature-tag">Roll-up Banners</span>
+              <span class="feature-tag">High Resolution</span>
+            </div>
+          </div>
+          <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أرغب%20في%20طلب%20خدمة%20Banner%20Design" target="_blank" class="service-btn">
+            <span>طلب الخدمة</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. PORTFOLIO SECTION (Filterable Grid with Pure Vector Art)
+       ========================================== -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">معرض الأعمال المتميزة</span>
+        <h2 class="section-title">نماذج من إبداعاتي الأخيرة</h2>
+        <p class="section-description">
+          مجموعة مختارة من مشاريع الهويات البصرية والبوسترات والمنيو والمطبوعات المصممة لأرق المؤسسات.
+        </p>
+      </div>
+
+      <!-- Portfolio Category Filters -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="branding">الهويات البصرية</button>
+        <button class="filter-btn" data-filter="social">السوشيال ميديا</button>
+        <button class="filter-btn" data-filter="posters">البوسترات والإعلانات</button>
+        <button class="filter-btn" data-filter="print">المطبوعات والمنيو</button>
+      </div>
+
+      <!-- Projects Grid (No External Images - Pure Dynamic SVG Graphic Art) -->
+      <div class="portfolio-grid">
+        
+        <!-- Project 1: Luminar Tech -->
+        <div class="glass-card project-card reveal" data-category="branding" data-id="1">
+          <div class="project-preview-wrapper">
+            <span class="project-badge">هوية بصرية</span>
+            <svg class="project-svg-canvas" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="250" fill="#0b0f19"/>
+              <!-- Tech Grid Pattern -->
+              <path d="M0 40H400M0 80H400M0 120H400M0 160H400M0 200H400" stroke="rgba(255,255,255,0.03)"/>
+              <path d="M80 0V250M160 0V250M240 0V250M320 0V250" stroke="rgba(255,255,255,0.03)"/>
+              <circle cx="200" cy="125" r="75" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 6"/>
+              <polygon points="200,65 245,100 245,150 200,185 155,150 155,100" stroke="#06b6d4" stroke-width="2.5" fill="rgba(6,182,212,0.1)"/>
+              <text x="200" y="135" font-family="Poppins, sans-serif" font-weight="800" font-size="22" fill="#ffffff" text-anchor="middle">LUMINAR</text>
+              <text x="200" y="152" font-family="Cairo, sans-serif" font-weight="600" font-size="10" fill="#f59e0b" text-anchor="middle">TECH SOLUTIONS</text>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">شركة لومينار للتكنولوجيا</h3>
+            <p class="project-desc">تصميم هوية بصرية كاملة ودليل إرشادي لمؤسسة برمجيات وذكاء اصطناعي.</p>
+            <div class="software-tags">
+              <span class="software-tag">Illustrator</span>
+              <span class="software-tag">Photoshop</span>
+              <span class="software-tag">InDesign</span>
+            </div>
+            <button class="view-details-btn">
+              <span>عرض التفاصيل</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: Horizon Poster -->
+        <div class="glass-card project-card reveal" data-category="posters" data-id="2">
+          <div class="project-preview-wrapper">
+            <span class="project-badge">بوستر سينمائي</span>
+            <svg class="project-svg-canvas" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="250" fill="#08080c"/>
+              <!-- Dramatic Poster Rays -->
+              <path d="M200 250 L100 0 L300 0 Z" fill="url(#poster-ray)" opacity="0.3"/>
+              <circle cx="200" cy="110" r="50" fill="rgba(225,29,72,0.15)" stroke="#e11d48" stroke-width="2"/>
+              <path d="M150 110 H250" stroke="#38bdf8" stroke-width="3"/>
+              <text x="200" y="105" font-family="Cairo, sans-serif" font-weight="900" font-size="28" fill="#ffffff" text-anchor="middle">مهرجان أفق</text>
+              <text x="200" y="125" font-family="Poppins, sans-serif" font-weight="600" font-size="10" fill="#38bdf8" text-anchor="middle">HORIZON FILM FESTIVAL</text>
+              <defs>
+                <linearGradient id="poster-ray" x1="200" y1="250" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#e11d48"/>
+                  <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">بوسترات مهرجان أفق السينمائي</h3>
+            <p class="project-desc">سلسلة بوسترات سينمائية إبداعية تعتمد على التضاد اللوني العميق والتيبوجرافي.</p>
+            <div class="software-tags">
+              <span class="software-tag">Photoshop</span>
+              <span class="software-tag">Lightroom</span>
+            </div>
+            <button class="view-details-btn">
+              <span>عرض التفاصيل</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3: La Cuisine Menu -->
+        <div class="glass-card project-card reveal" data-category="print" data-id="3">
+          <div class="project-preview-wrapper">
+            <span class="project-badge">منيو فاخر</span>
+            <svg class="project-svg-canvas" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="250" fill="#14110f"/>
+              <!-- Luxury Gold Border Frame -->
+              <rect x="20" y="15" width="360" height="220" stroke="#d4af37" stroke-width="1.5" fill="none" rx="8"/>
+              <rect x="26" y="21" width="348" height="208" stroke="rgba(212,175,55,0.3)" stroke-width="1" fill="none" rx="6"/>
+              <path d="M180 60 H220 M170 120 H230 M180 180 H220" stroke="#d4af37" stroke-width="2"/>
+              <text x="200" y="95" font-family="Poppins, sans-serif" font-weight="700" font-size="20" fill="#d4af37" text-anchor="middle">LA CUISINE</text>
+              <text x="200" y="115" font-family="Cairo, sans-serif" font-weight="600" font-size="12" fill="#ffffff" text-anchor="middle">مطعم وكافيه لا كوزين</text>
+              <text x="200" y="155" font-family="Cairo, sans-serif" font-size="10" fill="#a1a1aa" text-anchor="middle">قائمة طعام فاخرة ورائعة</text>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">منيو مطعم لا كوزين الفاخر</h3>
+            <p class="project-desc">تصميم منيو طعام عصري أنيق يعكس فخامة الأطباق وسهولة قراءة العناصر.</p>
+            <div class="software-tags">
+              <span class="software-tag">InDesign</span>
+              <span class="software-tag">Illustrator</span>
+            </div>
+            <button class="view-details-btn">
+              <span>عرض التفاصيل</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4: Royal Chrono Social -->
+        <div class="glass-card project-card reveal" data-category="social" data-id="4">
+          <div class="project-preview-wrapper">
+            <span class="project-badge">سوشيال ميديا</span>
+            <svg class="project-svg-canvas" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="250" fill="#0f141d"/>
+              <circle cx="200" cy="125" r="70" stroke="#fbbf24" stroke-width="2" fill="rgba(251,191,36,0.05)"/>
+              <circle cx="200" cy="125" r="60" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+              <!-- Clock Hands Graphic -->
+              <path d="M200 125 L200 85 M200 125 L225 125" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+              <text x="200" y="215" font-family="Poppins, sans-serif" font-weight="800" font-size="14" fill="#ffffff" text-anchor="middle">ROYAL CHRONO WATCHES</text>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">سوشيال ميديا الساعات الملكية</h3>
+            <p class="project-desc">حملة تصاميم سوشيال ميديا مخصصة لمنتج ساعات فاخر بلمسات إضاءة واحترافية عالية.</p>
+            <div class="software-tags">
+              <span class="software-tag">Photoshop</span>
+              <span class="software-tag">Illustrator</span>
+            </div>
+            <button class="view-details-btn">
+              <span>عرض التفاصيل</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 5: Business Card GoldLine -->
+        <div class="glass-card project-card reveal" data-category="print" data-id="5">
+          <div class="project-preview-wrapper">
+            <span class="project-badge">كروت أعمال VIP</span>
+            <svg class="project-svg-canvas" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="250" fill="#090a0f"/>
+              <!-- Angled Foil Business Card Shape -->
+              <g transform="translate(60, 45) rotate(-4)">
+                <rect width="280" height="160" rx="10" fill="#161824" stroke="#f59e0b" stroke-width="2"/>
+                <path d="M20 20 H100 M20 35 H60" stroke="#f59e0b" stroke-width="2"/>
+                <text x="20" y="85" font-family="Cairo, sans-serif" font-weight="800" font-size="14" fill="#ffffff">جولدلاين للاستشارات</text>
+                <text x="20" y="105" font-family="Poppins, sans-serif" font-size="10" fill="#9ca3af">GOLDLINE VIP CONSULTING</text>
+                <circle cx="230" cy="50" r="18" fill="url(#card-gold)"/>
+              </g>
+              <defs>
+                <linearGradient id="card-gold" x1="212" y1="32" x2="248" y2="68" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#fbbf24"/>
+                  <stop offset="1" stop-color="#b45309"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">كروت أعمال جولدلاين للاستشارات</h3>
+            <p class="project-desc">تصميم كروت VIP فاخرة مطبوعة بتقنية التذهيب البارز الورقي الممتاز.</p>
+            <div class="software-tags">
+              <span class="software-tag">Illustrator</span>
+              <span class="software-tag">Photoshop</span>
+            </div>
+            <button class="view-details-btn">
+              <span>عرض التفاصيل</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 6: Future Banners -->
+        <div class="glass-card project-card reveal" data-category="social" data-id="6">
+          <div class="project-preview-wrapper">
+            <span class="project-badge">بنرات رقمية</span>
+            <svg class="project-svg-canvas" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="250" fill="#0d111a"/>
+              <rect x="30" y="50" width="340" height="150" rx="12" fill="url(#banner-bg)" stroke="#06b6d4" stroke-width="1.5"/>
+              <text x="200" y="115" font-family="Cairo, sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle">أكاديمية المستقبل الرقمية</text>
+              <text x="200" y="145" font-family="Poppins, sans-serif" font-weight="600" font-size="12" fill="#38bdf8" text-anchor="middle">FUTURE ACADEMY PLATFORM</text>
+              <defs>
+                <linearGradient id="banner-bg" x1="30" y1="50" x2="370" y2="200" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#1e293b"/>
+                  <stop offset="1" stop-color="#0f172a"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">بنرات أكاديمية المستقبل</h3>
+            <p class="project-desc">بنرات ترويجية إعلانية للمواقع الرقمية ومنصات التسويق ذات معدل تحويل مرتفع.</p>
+            <div class="software-tags">
+              <span class="software-tag">Photoshop</span>
+              <span class="software-tag">Figma</span>
+            </div>
+            <button class="view-details-btn">
+              <span>عرض التفاصيل</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. INTERACTIVE QUOTE ESTIMATOR (Calculates Request)
+       ========================================== -->
+  <section id="estimator" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">حاسبة تفاصيل المشروع</span>
+        <h2 class="section-title">حدد متطلباتك واحصل على استشارة فورية</h2>
+        <p class="section-description">
+          اختر الخدمات المحددة ومدة التنفيذ المطلوبة لإنشاء رسالة واتساب مجهزة بالتفاصيل مباشرة.
+        </p>
+      </div>
+
+      <div class="estimator-card reveal">
+        <div class="estimator-grid">
+          <div>
+            <div class="estimator-title">1. اختر الخدمات المطلوبة:</div>
+            <div class="service-select-grid">
+              <div class="select-chip service-select-chip selected" data-value="Logo Design & Branding">الشعار والهوية البصرية</div>
+              <div class="select-chip service-select-chip" data-value="Social Media Design">تصاميم السوشيال ميديا</div>
+              <div class="select-chip service-select-chip" data-value="Posters & Flyers">البوسترات والفلايرات</div>
+              <div class="select-chip service-select-chip" data-value="Menu Design">تصميم المنيو المطبوع</div>
+              <div class="select-chip service-select-chip" data-value="Business Cards VIP">كروت الأعمال الفاخرة</div>
+              <div class="select-chip service-select-chip" data-value="Banners & Displays">البنرات والمطبوعات</div>
+            </div>
+
+            <div class="estimator-title" style="margin-top: 1.5rem;">2. مدة التسليم والتنفيذ:</div>
+            <div class="timeframe-options">
+              <div class="time-chip" data-time="مستعجل جداً (2-3 أيام)">مستعجل جداً (2-3 أيام)</div>
+              <div class="time-chip selected" data-time="قياسي (5-7 أيام)">قياسي (5-7 أيام)</div>
+              <div class="time-chip" data-time="مرن (10-14 يوم)">مرن (10-14 يوم)</div>
+            </div>
+          </div>
+
+          <div class="quote-summary-box">
+            <div>
+              <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 1rem; color: var(--text-primary);">ملخص الطلب:</h3>
+              <div class="summary-details">
+                <div class="summary-row">
+                  <span>الخدمات المحددة:</span>
+                  <strong id="quote-selected-services" style="color: var(--accent-amber);">الشعار والهوية البصرية</strong>
+                </div>
+                <div class="summary-row">
+                  <span>مدّة التنفيذ:</span>
+                  <strong id="quote-selected-timeframe" style="color: var(--accent-cyan);">قياسي (5-7 أيام)</strong>
+                </div>
+                <div class="summary-row">
+                  <span>ملفات المصدر:</span>
+                  <strong style="color: #22c55e;">مجانية (AI, PSD, PDF)</strong>
+                </div>
+              </div>
+            </div>
+
+            <a id="quote-whatsapp-btn" href="https://wa.me/201015335310?text=السلام%20عليكم" target="_blank" rel="noopener noreferrer" class="whatsapp-quote-btn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>إرسال الطلب عبر واتساب مباشر</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. WHY CHOOSE ME SECTION
+       ========================================== -->
+  <section id="why-me" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">معايير الإتقان</span>
+        <h2 class="section-title">لماذا تختار التعامل مع إبراهيم سمير؟</h2>
+        <p class="section-description">
+          تطبيق أعلى معايير الجودة العالمية لضمان تجربة عمل سلسة ومخرجات تفوق التوقعات.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="glass-card why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="why-info">
+            <h3>دقة متناهية والتزام بالصنع</h3>
+            <p>الاعتناء بكافة النسب والتفاصيل الصغيرة لجعل التصميم يبدو بأعلى مستويات الاحترافية.</p>
+          </div>
+        </div>
+
+        <div class="glass-card why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="why-info">
+            <h3>تسليم في المواعيد المحددة</h3>
+            <p>احترام كامل لأوقات العميل والالتزام بجدول تسليم دقيق دون أي تأخير.</p>
+          </div>
+        </div>
+
+        <div class="glass-card why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+          </div>
+          <div class="why-info">
+            <h3>تفكير إستراتيجى قبل التصميم</h3>
+            <p>دراسة الجمهور والمنافسين وضمان تناسق الهوية مع رؤية وأهداف مشروعك.</p>
+          </div>
+        </div>
+
+        <div class="glass-card why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>
+          </div>
+          <div class="why-info">
+            <h3>دعم مستمر وتعديلات مرنة</h3>
+            <p>العمل جنباً إلى جنب مع العميل وتقديم تعديلات مرنة حتى الوصول للرضا التام.</p>
+          </div>
+        </div>
+
+        <div class="glass-card why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
+          </div>
+          <div class="why-info">
+            <h3>إبداع أصيل بدون تكرار</h3>
+            <p>ابتكار أفكار فريدة 100% بدون الاعتماد على القوالب الجاهزة أو التكرار التجاري.</p>
+          </div>
+        </div>
+
+        <div class="glass-card why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+          </div>
+          <div class="why-info">
+            <h3>ملفات طباعة وتنفيذ جاهزة</h3>
+            <p>تسليم كافة صيغ المخرجات المصدرية المجهزة للطباعة والمواقع والتطبيقات.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       9. TESTIMONIALS SECTION
+       ========================================== -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">شهادات النجاح</span>
+        <h2 class="section-title">ماذا يقول العملاء عني؟</h2>
+        <p class="section-description">
+          نفخر بالشراكات الناجحة والتقييمات الإيجابية التي تحققت مع مختلف العملاء.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="glass-card testimonial-card reveal">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "تعاملت مع المصمم إبراهيم سمير لتطوير هوية شركتنا. النتيجة كانت أبهر بكثير مما يتوقع الجميع. ذوق راقٍ ودقة عالية في المواعيد."
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">أ.م</div>
+            <div class="client-details">
+              <h4>م. أحمد المحمدي</h4>
+              <p>الرئيس التنفيذي — لومينار للتكنولوجيا</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card reveal">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "تصاميم المنيو والكروت التي نفذها إبراهيم للمطعم لفتت أنظار جميع الزوار وأعطت انطباعًا فورياً بالفخامة. أنصح بشدة بالتعامل معه."
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">س.ع</div>
+            <div class="client-details">
+              <h4>سارة العتيبي</h4>
+              <p>مديرة التسويق — لا كوزين</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card reveal">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "احترافية من الطراز الأول، الالتزام بالوقت والتجاوب السريع مع التعديلات كان ممتازاً جداً. استلمت ملفات طباعة جاهزة تماماً."
+            </p>
+          </div>
+          <div class="client-info">
+            <div class="client-avatar">د.خ</div>
+            <div class="client-details">
+              <h4>د. خالد حسن</h4>
+              <p>مؤسس — جولدلاين VIP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       10. FAQ ACCORDION SECTION
+       ========================================== -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">إجابات استفساراتك</span>
+        <h2 class="section-title">الأسئلة الشائعة</h2>
+        <p class="section-description">
+          كل ما تحتاج معرفته عن خطوات العمل وتسليم المشاريع والتعديلات.
+        </p>
+      </div>
+
+      <div class="faq-container reveal">
+        <div class="faq-item active">
+          <button class="faq-header">
+            <span>كم يستغرق وقت تنفيذ مشروع الهوية البصرية الشاملة؟</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              يتراوح الوقت المعتاد لتطوير الهوية البصرية الشاملة بين 5 إلى 10 أيام عمل، ويشمل ذلك مرحلة البحث والتحليل، ابتكار النماذج المبدئية، والتطبيق المطبوع الكامل.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header">
+            <span>ما هي الملفات والصيغ التي أستلمها عند إتمام التصميم؟</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              ستستلم حزمة كاملة تحتوي على ملفات المصدري المفتوحة (AI, PSD) إلى جانب صيغ الطباعة والاستخدام الرقمي العالي الدقة (PDF Print, SVG, PNG, JPG).
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header">
+            <span>هل يمكن تقديم تعديلات على التصاميم المبدئية؟</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              نعم بالتأكيد! نحرص على تقديم جولات تعديل مرنة ومجانية حتى نصل معاً إلى النتيجة المثالية التي ترضي طموحك وتخدم علاماتك التجارية.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header">
+            <span>كيف يتم الاتفاق وبدء العمل على مشروع جديد؟</span>
+            <svg class="faq-icon" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              يتم التواصل عبر الواتساب لتحديد تفاصيل مشروعك وملء الاستبيان المخصص، ثم الاتفاق على التكلفة والجدول الزمني المعتمد لبدء التنفيذ فوراً.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       11. CONTACT SECTION
+       ========================================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">تواصل معي الآن</span>
+        <h2 class="section-title">دعنا نبدأ مشروعك القادم معاً</h2>
+        <p class="section-description">
+          سواء كان لديك مشروع جديد أو ترغب في تطوير هويتك الحالية، أنا هنا لمساعدتك.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contact Details & WhatsApp Banner -->
+        <div class="contact-info-wrapper reveal">
+          <div class="glass-card whatsapp-main-card">
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#25d366"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <h3>تواصل عبر الواتساب المباشر</h3>
+            </div>
+            <p style="color: var(--text-secondary); font-size:0.95rem; line-height:1.6;">
+              الوسيلة الأسرع للحصول على استشارة ورؤية فورية لتصميماتك. أجبك على مدار الساعة.
+            </p>
+            <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أنا%20مهتم%20بخدمات%20التصميم%20وأرغب%20في%20الاستفسار" target="_blank" rel="noopener noreferrer" class="whatsapp-quote-btn">
+              <span>01015335310</span>
+            </a>
+          </div>
+
+          <div class="glass-card contact-card">
+            <div class="contact-icon-box">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.828-1.015-5.183-3.37-6.198-6.198l1.293-.97c.362-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+            </div>
+            <div class="contact-text">
+              <h4>رقم الاتصال المباشر</h4>
+              <a href="tel:01015335310" class="en-text">01015335310</a>
+            </div>
+          </div>
+
+          <div class="glass-card contact-card">
+            <div class="contact-icon-box">
+              <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+            </div>
+            <div class="contact-text">
+              <h4>البريد الإلكتروني</h4>
+              <p class="en-text">ibrahim.samir.design@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Fast Form -->
+        <div class="glass-card reveal">
+          <h3 style="font-size:1.3rem; font-weight:800; margin-bottom:1.5rem; color: var(--accent-amber);">أرسل تفاصيل مشروعك السريع</h3>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="form-name">الاسم الكافي:</label>
+              <input type="text" id="form-name" class="form-input" placeholder="مثال: أحمد عبد الله" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-phone">رقم الهاتف / الواتساب:</label>
+              <input type="tel" id="form-phone" class="form-input en-text" placeholder="010XXXXXXXX" />
+            </div>
+
+            <div class="form-group">
+              <label for="form-service">الخدمة المطلوبة:</label>
+              <input type="text" id="form-service" class="form-input" placeholder="مثال: هوية بصرية كاملة، تصميم منيو، بوسترات" />
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">تفاصيل وفكرة المشروع:</label>
+              <textarea id="form-message" class="form-textarea" placeholder="اكتب نبذة عن مشروعك ومتطلباتك الخاصة..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width:100%;">
+              <span>إرسال الطلب عبر الواتساب</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       12. PROJECT DETAIL MODAL POPUP
+       ========================================== -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="إغلاق">&times;</button>
+      
+      <div class="modal-body">
+        <div id="modal-canvas-container" class="modal-preview-container"></div>
+
+        <div>
+          <span id="modal-category" class="project-badge" style="position:static; display:inline-block; margin-bottom:0.75rem;">تصميم</span>
+          <h2 id="modal-title" style="font-size:1.8rem; font-weight:900; margin-bottom:1rem;">اسم المشروع</h2>
+          <p id="modal-description" style="color:var(--text-secondary); line-height:1.8; font-size:1.05rem;">وصف المشروع التفصيلي...</p>
+        </div>
+
+        <div class="modal-meta-grid">
+          <div class="meta-box">
+            <h4>العميل:</h4>
+            <p id="modal-client">-</p>
+          </div>
+          <div class="meta-box">
+            <h4>سنة التنفيذ:</h4>
+            <p id="modal-year" class="en-text">-</p>
+          </div>
+          <div class="meta-box">
+            <h4>البرامج المستخدمة:</h4>
+            <div id="modal-software"></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-size:1.1rem; font-weight:800; margin-bottom:0.75rem; color: var(--accent-amber);">مخرجات ومحتويات التسليم:</h4>
+          <ul id="modal-deliverables" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:0.5rem; color:var(--text-secondary);"></ul>
+        </div>
+
+        <div>
+          <h4 style="font-size:0.9rem; color: var(--text-muted); margin-bottom:0.4rem;">لوحة الألوان المستعملة:</h4>
+          <div id="modal-colors" class="modal-color-palette"></div>
+        </div>
+
+        <a id="modal-whatsapp-btn" href="#" target="_blank" class="btn-primary" style="width:100%; justify-content:center;">
+          <span>اطلب مشروعاً مشابهاً الآن</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       13. FLOATING WHATSAPP & BACK TO TOP BUTTONS
+       ========================================== -->
+  <!-- Persistent Floating WhatsApp Button -->
+  <a href="https://wa.me/201015335310?text=السلام%20عليكم%20أنا%20مهتم%20بخدمات%20التصميم%20وأرغب%20في%20الاستفسار" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="تواصل عبر الواتساب">
+    <div class="whatsapp-pulse"></div>
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <!-- Scroll Back to Top Button -->
+  <button class="back-to-top" aria-label="العودة للأعلى">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ==========================================
+       14. FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-icon">IS</div>
+            <div class="logo-text">
+              <span class="logo-name">إبراهيم سمير</span>
+              <span class="logo-sub en-text">GRAPHIC DESIGNER</span>
+            </div>
+          </div>
+          <p>
+            تخصّص متكامل في تصميم الهويات البصرية والشعارات والمطبوعات الإعلانية الفاخرة التي تعكس قيمة علاماتك التجارية.
+          </p>
+        </div>
+
+        <!-- Links Navigation -->
+        <div class="footer-links-col">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#hero">الرئيسية</a></li>
+            <li><a href="#about">من أنا</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#portfolio">معرض الأعمال</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Links -->
+        <div class="footer-links-col">
+          <h4>الخدمات المطلوبة</h4>
+          <ul>
+            <li><a href="#services">Logo Design</a></li>
+            <li><a href="#services">Branding & Guideline</a></li>
+            <li><a href="#services">Menu & Flyer Design</a></li>
+            <li><a href="#services">Business Cards VIP</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © Ibrahim Samir — All Rights Reserved.
+        </div>
+        <div style="color: var(--accent-amber); font-weight:700;">
+          تصميم وتنفيذ متكامل بواسطة Ibrahim Samir Portfolio VIP
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Execution -->
+  <script src="./script.js" type="module"></script>
+</body>
+</html>
