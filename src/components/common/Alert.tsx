@@ -1,73 +1,48 @@
 'use client';
 
-import { AlertCircle, CheckCircle, InfoIcon, XCircle } from 'lucide-react';
-import { ReactNode } from 'react';
-
-type AlertType = 'success' | 'error' | 'warning' | 'info';
+import { AlertCircle, CheckCircle, XCircle, AlertTriangle, X } from 'lucide-react';
 
 interface AlertProps {
-  type: AlertType;
-  title?: string;
-  message: string | ReactNode;
-  onClose?: () => void;
+  type: 'success' | 'error' | 'warning' | 'info';
+  title: string;
+  message: string;
+  onClose: () => void;
 }
 
-const alertStyles = {
-  success: {
-    bg: 'bg-green-50 dark:bg-green-900/20',
-    border: 'border-green-200 dark:border-green-800',
-    icon: 'text-green-600',
-    text: 'text-green-800 dark:text-green-200',
-    title: 'text-green-900 dark:text-green-100',
-  },
-  error: {
-    bg: 'bg-red-50 dark:bg-red-900/20',
-    border: 'border-red-200 dark:border-red-800',
-    icon: 'text-red-600',
-    text: 'text-red-800 dark:text-red-200',
-    title: 'text-red-900 dark:text-red-100',
-  },
-  warning: {
-    bg: 'bg-yellow-50 dark:bg-yellow-900/20',
-    border: 'border-yellow-200 dark:border-yellow-800',
-    icon: 'text-yellow-600',
-    text: 'text-yellow-800 dark:text-yellow-200',
-    title: 'text-yellow-900 dark:text-yellow-100',
-  },
-  info: {
-    bg: 'bg-blue-50 dark:bg-blue-900/20',
-    border: 'border-blue-200 dark:border-blue-800',
-    icon: 'text-blue-600',
-    text: 'text-blue-800 dark:text-blue-200',
-    title: 'text-blue-900 dark:text-blue-100',
-  },
-};
-
-const iconMap = {
-  success: CheckCircle,
-  error: XCircle,
-  warning: AlertCircle,
-  info: InfoIcon,
-};
-
 export function Alert({ type, title, message, onClose }: AlertProps) {
-  const style = alertStyles[type];
+  const iconMap = {
+    success: CheckCircle,
+    error: XCircle,
+    warning: AlertTriangle,
+    info: AlertCircle,
+  };
+
+  const colorMap = {
+    success: 'bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 border-green-200 dark:border-green-800',
+    error: 'bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 border-red-200 dark:border-red-800',
+    warning: 'bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-400 border-yellow-200 dark:border-yellow-800',
+    info: 'bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-800',
+  };
+
   const Icon = iconMap[type];
 
   return (
-    <div className={`${style.bg} ${style.border} border rounded-lg p-4 animate-slideInUp`}>
-      <div className="flex items-start gap-3">
-        <Icon className={`${style.icon} w-5 h-5 mt-0.5 flex-shrink-0`} />
-        <div className="flex-1">
-          {title && <h3 className={`${style.title} font-semibold mb-1`}>{title}</h3>}
-          <p className={`${style.text} text-sm`}>{message}</p>
-        </div>
-        {onClose && (
-          <button onClick={onClose} className={`${style.text} hover:opacity-70`}>
-            ×
-          </button>
-        )}
+    <div
+      className={`p-4 rounded-lg border flex items-start gap-3 animate-slideIn ${
+        colorMap[type]
+      }`}
+    >
+      <Icon className="w-5 h-5 flex-shrink-0 mt-0.5" />
+      <div className="flex-1">
+        <h3 className="font-semibold">{title}</h3>
+        <p className="text-sm opacity-90">{message}</p>
       </div>
+      <button
+        onClick={onClose}
+        className="flex-shrink-0 p-1 hover:opacity-70 transition"
+      >
+        <X className="w-4 h-4" />
+      </button>
     </div>
   );
 }

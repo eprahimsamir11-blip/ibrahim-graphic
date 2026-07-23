@@ -1,26 +1,24 @@
-'use client';
-
 export default function Home() {
   return (
-    <main className="flex items-center justify-center min-h-screen bg-gradient-to-br from-primary-50 to-blue-50 dark:from-dark-900 dark:to-dark-800">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold text-primary-600 mb-4">Ibrahim Graphic</h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">منصة احترافية لإدارة أعمال التصميم الجرافيكي</p>
+    <div className="min-h-screen bg-gradient-to-br from-primary-600 to-primary-900 flex items-center justify-center">
+      <div className="text-center text-white">
+        <h1 className="text-5xl font-bold mb-4">Ibrahim Graphic</h1>
+        <p className="text-xl mb-8">منصة إدارة مشاريع التصميم الجرافيكي</p>
         <div className="space-x-4">
           <a
             href="/login"
-            className="inline-block px-8 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition"
+            className="inline-block px-8 py-3 bg-white text-primary-600 font-bold rounded-lg hover:bg-gray-100 transition"
           >
             تسجيل الدخول
           </a>
           <a
-            href="/signup"
-            className="inline-block px-8 py-3 bg-gray-200 dark:bg-dark-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-300 dark:hover:bg-dark-600 transition"
+            href="/register"
+            className="inline-block px-8 py-3 bg-transparent text-white font-bold border-2 border-white rounded-lg hover:bg-white hover:text-primary-600 transition"
           >
             إنشاء حساب
           </a>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
