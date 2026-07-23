@@ -1,0 +1,122 @@
+# Ibrahim Graphic - تحديثات المتطلبات
+
+## المتطلبات الأساسية
+
+### Runtime
+- Node.js >= 18.0.0
+- npm >= 9.0.0 أو yarn >= 3.0.0
+
+## الحزم المثبتة
+
+### Framework & Core
+- next@14.0.0
+- react@18.2.0
+- react-dom@18.2.0
+- typescript@5.3.0
+
+### UI & Styling
+- tailwindcss@3.4.0
+- autoprefixer@10.4.0
+- postcss@8.4.0
+- lucide-react@0.263.0
+
+### State Management
+- zustand@4.4.0
+
+### Authentication & Security
+- next-auth@4.24.0
+- bcryptjs@2.4.3
+- jsonwebtoken@9.1.0
+
+### Database & ORM
+- @prisma/client@5.7.0
+- prisma@5.7.0
+
+### Form & Validation
+- react-hook-form@7.49.0
+- zod@3.22.0
+- @hookform/resolvers@3.3.4
+
+### HTTP Client
+- axios@1.6.0
+- swr@2.2.0
+
+### Date & Time
+- date-fns@2.30.0
+
+### File Upload
+- next-cloudinary@5.0.0
+- multer@1.4.5
+
+### Email
+- nodemailer@6.9.0
+- react-email@0.0.47
+
+### Utilities
+- clsx@2.0.0
+- classnames@2.3.0
+- lodash@4.17.0
+
+### Development Dependencies
+- @testing-library/react@14.1.0
+- @testing-library/jest-dom@6.1.5
+- @types/node@20.0.0
+- @types/react@18.2.0
+- @types/react-dom@18.2.0
+- eslint@8.56.0
+- eslint-config-next@14.0.0
+- prettier@3.1.0
+
+## تثبيت سريع
+
+```bash
+npm install
+```
+
+## تحديث الحزم
+
+```bash
+# تحديث جميع الحزم
+npm update
+
+# تحديث حزمة معينة
+npm install package-name@latest
+
+# التحقق من الإصدارات المتقادمة
+npm outdated
+```
+
+## متطلبات الإنتاج
+
+```bash
+npm ci --production
+```
+
+## المتطلبات الخارجية
+
+### قاعدة البيانات
+- MongoDB 5.0+ أو PostgreSQL 13+
+
+### الخدمات
+- Cloudinary (اختياري، لإدارة الصور)
+- SendGrid أو Gmail (لإرسال البريد الإلكتروني)
+
+### المتغيرات البيئية المطلوبة
+```
+NEXTAUTH_SECRET
+DATABASE_URL
+NEXT_PUBLIC_APP_URL
+```
+
+## التوافق
+
+### المتصفحات المدعومة
+- Chrome >= 90
+- Firefox >= 88
+- Safari >= 14
+- Edge >= 90
+
+### الأنظمة المدعومة
+- Windows 10+
+- macOS 10.15+
+- Linux (Ubuntu 18.04+)
